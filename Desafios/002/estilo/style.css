@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    display: inline-block;
+    height: 80px;
+    width: 140px;
+    font-size: 1.1rem;
+    padding: 5px;
+    background-color: rgb(243, 241, 241);
+    border: 2px solid rgb(184, 182, 182);
+}
