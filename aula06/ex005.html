@@ -17,9 +17,17 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        window.document.write()
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText + ' ') // innerText copia o texto sem a formatação
+        window.document.write(p1.innerHTML) // innerHTML copia o texto com a formatação
+        corpo.style.background = 'black'
+        p1.style.color = 'red'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = "Estou aguardando..."
     </script>
 </body>
 </html>
