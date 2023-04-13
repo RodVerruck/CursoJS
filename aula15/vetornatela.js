@@ -11,10 +11,11 @@ console.log(valores[4])
 console.log(valores[5])
 */
 
-for (let pos = 0; pos < valores.length; pos++) {
+/*for (let pos = 0; pos < valores.length; pos++) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`) 
-    //Esse é um jeito de fazer, mas existe um novo jeito, que foi criado nas novas versões do EcmaScript, que é ainda mais simples. Veja abaixo:
-}
+}*/
+
+//Esse é um jeito de fazer, mas existe um novo jeito, que foi criado nas novas versões do EcmaScript, que é ainda mais simples. Veja abaixo:
 
     for (let pos in valores) {
         console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
