@@ -1,6 +1,8 @@
 {
     "version": "0.2.0",
     "configurations": [
+    
+
         {
             "type": "pwa-node",
             "request": "launch",
@@ -8,7 +10,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\aula14\\ambiente.js"
+            "program": "${workspaceFolder}\\aula16ex\\script.js"
         },
         {
             "type": "node",
