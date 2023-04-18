@@ -6,7 +6,6 @@
 let num = document.getElementById('txtn')
 let vetor = []
 let lista = document.getElementById('listanum')
-let resp = document.getElementById('resp')
 let maiorNum = 0
 let menorNum = 1000
 let soma = 0
@@ -14,7 +13,7 @@ let media = 0
 
 function adicionar() {
     let n = Number(num.value)
-    if (n == 0 || isNaN(n) || n > 100 || vetor.indexOf(n) > -1) {
+    if (n <= 0 || n > 100 || vetor.indexOf(n) > -1) {
         window.alert('Digite um número válido!')
     } else {
         vetor.push(n)
@@ -27,6 +26,8 @@ function adicionar() {
             menorNum = n
         }
     }
+    num.value = ''
+    num.focus()
     soma += n
 }
 
