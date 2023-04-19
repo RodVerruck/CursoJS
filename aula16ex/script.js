@@ -7,7 +7,7 @@ let num = document.getElementById('txtn')
 let vetor = []
 let lista = document.getElementById('listanum')
 let maiorNum = 0
-let menorNum = 1000
+let menorNum = 101 // Inicializa com um valor alto
 let soma = 0
 let media = 0
 
@@ -20,16 +20,19 @@ function adicionar() {
         let item = document.createElement('option')
         item.text = `Valor ${n} adicionado!`
         lista.appendChild(item)
+        resultados.innerHTML = ''
         if (n > maiorNum) {
             maiorNum = n
-        } else if (n < menorNum) {
+        }
+        if (n < menorNum) {
             menorNum = n
         }
+        soma += n
     }
     num.value = ''
     num.focus()
-    soma += n
 }
+
 
 function finalizar() {
     let qtd = vetor.length
